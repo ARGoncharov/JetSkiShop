@@ -49,6 +49,10 @@ body {
 	font-family: 'SFProDisplay-Bold', sans-serif;
 }
 
+.header_bottom {
+	margin-bottom: 78px;
+}
+
 .menu_item {
 	display: inline-block;
 }
@@ -112,8 +116,59 @@ body {
 
 .menu-categories  {
 	display: flex;
-	align-items: center;
 	justify-content: space-around;
 	background-color: #F0F0F4;
+	align-items: center;
 	min-height: 53px;
+}
+
+.menu-categories_item {
+	position: relative;
+}
+
+.menu-categories_link {
+	transition: all .3s;
+	font-weight: 400;
+	padding: 15px 0 14px ;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+/* В чем разница между :hover и ::hover? когда что использовать? */
+
+/* Селектор :hover применяется для выбора элемента, когда на него наведена мышь.
+Например, вы можете использовать селектор :hover
+для изменения цвета фона кнопки при наведении на нее мыши.
+
+Псевдоэлемент ::hover используется для стилизации определенного состояния элемента,
+связанного с наведением на этот элемент мыши.
+Этот псевдоэлемент обычно используется для создания эффектов, которые происходят при наведении мыши на элемент,
+например, для добавления подчеркивания при наведении на ссылку.
+*/
+
+.menu-categories_link::before {
+	content: "";
+	position: absolute;
+	width: 0;
+	left: auto;
+	right: 0;
+	background-color: #1C62CD;
+	height: 3px;
+	bottom: -2px;
+	transition: all .3s;
+}
+
+.menu-categories_link:hover {
+	font-family: 'SFProDisplay-Semibold', sans-serif;
+	font-weight: 600;
+	color: #1C62CD;
+	/*border-bottom: 3px solid #1C62CD;*/
+}
+
+.menu-categories_link:hover::before  {
+	width: 100%;
+	right: auto;
+	left: 0;
 }
