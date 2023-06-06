@@ -109,3 +109,11 @@ body {
 	bottom: -15px;
 	right: -13px;
 }
+
+.menu-categories  {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	background-color: #F0F0F4;
+	min-height: 53px;
+}
