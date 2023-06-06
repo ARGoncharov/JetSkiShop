@@ -29,7 +29,10 @@ h6 {
 
 body {
 	color: #2F3035;
-	font-family: sans-serif;
+	font-family: 'SFProDisplay-Regular', sans-serif;
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: 400;
 }
 
 .container {
@@ -43,6 +46,7 @@ body {
 	justify-content: space-between;
 	align-items: center;
 	height: 122px;
+	font-family: 'SFProDisplay-Bold', sans-serif;
 }
 
 .menu_item {
@@ -51,4 +55,57 @@ body {
 
 .menu_item + .menu_item {
 	padding-left: 50px;
+}
+
+.header-box {
+	display: flex;
+}
+
+.header_adress {
+	margin-right: 60px;
+	width: 265px;
+	padding-left: 30px;
+	position: relative;
+}
+
+/*Почему before?*/
+
+.header_adress::before {
+	content: "";
+	position: absolute;
+	background-image: url("images/location.svg");
+	width: 30px;
+	height: 30px;
+	left: 0;
+	top: -10px;
+}
+
+.user-list {
+	margin-right: 15px;
+	display: flex;
+	align-items: center;
+}
+
+.user-list_item {
+	padding-right: 10px;
+}
+
+.cart {
+	position: relative  ;
+}
+
+.cart_num {
+	position: absolute;
+	font-family: 'SFProDisplay-Medium', sans-serif;
+	font-weight: 500;
+	color: #FFFFFF;
+	font-size: 10px;
+	line-height: 20px;
+	width: 20px;
+	height: 20px;
+	background-color: #1C62CD;
+	border-radius: 50%;
+	text-align: center;
+	bottom: -15px;
+	right: -13px;
 }
