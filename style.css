@@ -172,3 +172,12 @@ body {
 	right: auto;
 	left: 0;
 }
+
+.banner-section_inner {
+	 display: flex;
+	 justify-content: space-between;
+}
+
+.banner-section_slider {
+	max-width: 870px;
+}
