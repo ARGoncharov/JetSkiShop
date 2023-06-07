@@ -181,3 +181,51 @@ body {
 .banner-section_slider {
 	max-width: 870px;
 }
+
+.banner-section_slider-btn {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	padding: 0;
+	z-index: 5;
+	cursor: pointer ;
+}
+
+.banner-section_slider-btnprev {
+	left: 20px;
+}
+
+.banner-section_slider-btnnext {
+	right: 20px;
+}
+
+.slick-dots {
+	position: absolute;
+	bottom: 40px;
+	left: 0;
+	right: 0;
+	text-align: center;
+}
+
+.slick-dots li {
+	display: inline-block;
+	padding: 0 5px;
+}
+
+.slick-dots button {
+	padding: 0;
+	font-size: 0;
+	margin: 0;
+	height: 11px;
+	width: 11px;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	background-color: transparent;
+}
+
+.slick-active button {
+	background-color: #fff;
+}
